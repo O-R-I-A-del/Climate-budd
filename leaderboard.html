@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - Climate Budd East Africa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🦁 Climate Budd EA</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="daily-challenge.html">Daily Challenge</a></li>
+                <li><a href="facts.html">Fun Facts</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li><a href="leaderboard.html">Champions</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>🏆 Climate Champions Leaderboard</h1>
+            <p>See who's leading the climate action movement across East Africa!</p>
+        </div>
+    </section>
+
+    <!-- Your Stats Section -->
+    <section class="your-stats-section">
+        <div class="container">
+            <h2>Your Climate Impact</h2>
+            <div class="user-stats-cards">
+                <div class="user-stat-card">
+                    <div class="user-stat-icon">🎯</div>
+                    <div class="user-stat-number" id="total-actions">0</div>
+                    <div class="user-stat-label">Actions Completed</div>
+                </div>
+                <div class="user-stat-card">
+                    <div class="user-stat-icon">💨</div>
+                    <div class="user-stat-number" id="co2-saved">0</div>
+                    <div class="user-stat-label">kg CO₂ Saved</div>
+                </div>
+                <div class="user-stat-card">
+                    <div class="user-stat-icon">👥</div>
+                    <div class="user-stat-number" id="people-inspired">0</div>
+                    <div class="user-stat-label">People Inspired</div>
+                </div>
+                <div class="user-stat-card">
+                    <div class="user-stat-icon">🏅</div>
+                    <div class="user-stat-number" id="tier-badge">Starter</div>
+                    <div class="user-stat-label">Your Tier</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rankings Section -->
+    <section class="rankings-section">
+        <div class="container">
+            <h2>🏅 Top Champions</h2>
+            <div class="leaderboard-table">
+                <div class="leaderboard-header">
+                    <div class="rank-col">Rank</div>
+                    <div class="name-col">Champion Name</div>
+                    <div class="actions-col">Actions</div>
+                    <div class="co2-col">CO₂ Saved</div>
+                    <div class="badge-col">Badge</div>
+                </div>
+                <div class="leaderboard-rows" id="champions">
+                    <div class="leaderboard-row">
+                        <div class="rank-col">1</div>
+                        <div class="name-col">🦁 Simba Protector</div>
+                        <div class="actions-col">150+</div>
+                        <div class="co2-col">750kg</div>
+                        <div class="badge-col">⭐⭐⭐</div>
+                    </div>
+                    <div class="leaderboard-row">
+                        <div class="rank-col">2</div>
+                        <div class="name-col">🌿 Green Guardian</div>
+                        <div class="actions-col">120</div>
+                        <div class="co2-col">600kg</div>
+                        <div class="badge-col">⭐⭐</div>
+                    </div>
+                    <div class="leaderboard-row">
+                        <div class="rank-col">3</div>
+                        <div class="name-col">💧 Water Warrior</div>
+                        <div class="actions-col">95</div>
+                        <div class="co2-col">475kg</div>
+                        <div class="badge-col">⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievement Badges Section -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2>🎖️ Achievement Badges</h2>
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-icon">🌱</div>
+                    <div class="badge-name">First Step</div>
+                    <p>Complete your first challenge</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">🔥</div>
+                    <div class="badge-name">Week Warrior</div>
+                    <p>Complete 7 challenges in a week</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">🦁</div>
+                    <div class="badge-name">Simba Champion</div>
+                    <p>Complete 50+ challenges</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">💚</div>
+                    <div class="badge-name">Eco Warrior</div>
+                    <p>Save 100kg CO₂</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">🌍</div>
+                    <div class="badge-name">Planet Protector</div>
+                    <p>Complete all challenge types</p>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">⭐</div>
+                    <div class="badge-name">Legend</div>
+                    <p>Inspire 50+ people</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Stats Section -->
+    <section class="regional-stats-section">
+        <div class="container">
+            <h2>📊 East Africa Stats</h2>
+            <div class="stats-cards-grid">
+                <div class="stats-card">
+                    <div class="stats-card-icon">🇺🇬</div>
+                    <div class="stats-card-title">Uganda</div>
+                    <div class="stats-card-number">450</div>
+                    <div class="stats-card-label">Active Champions</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-card-icon">🇰🇪</div>
+                    <div class="stats-card-title">Kenya</div>
+                    <div class="stats-card-number">380</div>
+                    <div class="stats-card-label">Active Champions</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-card-icon">🇹🇿</div>
+                    <div class="stats-card-title">Tanzania</div>
+                    <div class="stats-card-number">320</div>
+                    <div class="stats-card-label">Active Champions</div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-card-icon">🌍</div>
+                    <div class="stats-card-title">Total Region</div>
+                    <div class="stats-card-number">1,150+</div>
+                    <div class="stats-card-label">Champions Worldwide</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="daily-challenge.html">Challenges</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="guides.html">Guides</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="community.html">Join Community</a></li>
+                        <li><a href="wildlife.html">Wildlife Impact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rankings</h4>
+                    <ul>
+                        <li>📈 Updated Daily</li>
+                        <li>🏆 Fair & Transparent</li>
+                        <li>🌍 Regional Tracking</li>
+                        <li>🎖️ 6+ Badges to earn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Climate Budd - East Africa Climate Action</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
